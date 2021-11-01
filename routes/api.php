@@ -12,6 +12,6 @@
 | and give it the Closure to call when that URI is requested.
 |
 */
-$router->group(['prefix' => 'api'], function () use ($router) {
-    $router->get('sampel',  'Api\ExampleController@sampel');
+$router->group(['prefix' => 'api', 'namespace' => 'Api'], function () use ($router) {
+    $router->get('sampel',  'ExampleController@sampel');
 });
