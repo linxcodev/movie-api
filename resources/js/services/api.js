@@ -1,6 +1,6 @@
 import axios from 'axios'
-import store from '@/store'
-import router from '@/router';
+import store from '../store'
+import router from '../router';
 
 const $axios = axios.create({
     headers: {
@@ -19,7 +19,7 @@ const $axios2 = axios.create({
 $axios.interceptors.request.use (
     function ( config ) {
         config.headers.Authorization = 'Bearer '+store.state.token;
-        config.url = store.state.baseURL+'/api/v1/' + config.url
+        config.url = store.state.baseURL+'/api/' + config.url
         return config;
     },
     function ( error ) {
@@ -30,7 +30,7 @@ $axios.interceptors.request.use (
 $axios2.interceptors.request.use (
     function ( config ) {
         config.headers.Authorization = 'Bearer '+store.state.token;
-        config.url = store.state.baseURL+'/api/v1/' + config.url
+        config.url = store.state.baseURL+'/api/' + config.url
         return config;
     },
     function ( error ) {

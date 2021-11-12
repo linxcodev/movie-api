@@ -7,6 +7,17 @@
 
 Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
 
+## Log Update
+
+### Backend
+- Terintegrasi dengan JWT (tymon/jwt-auth 1.0)
+- Route api
+
+### VUE 2
+- Struktur vue (router, store, view, dll)
+- Router check auth
+- Router dinamis title
+
 ## Official Documentation
 
 Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).

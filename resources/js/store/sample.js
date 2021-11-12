@@ -1,4 +1,4 @@
-import $axios from '@/services/api.js'
+import $axios from '../services/api.js'
 
 const state = () => ({
     users: [],

@@ -38,9 +38,13 @@ router.beforeEach((to, from , next) => {
 })
 
 
-router.afterEach(() => {
+router.afterEach((to) => {
   store.commit('LOADING_PAGE', false)
   store.commit('SET_LOADING', false)
+
+  Vue.nextTick(() => {
+    document.title = 'Page' + ((to.meta.title) ? ' - ' + to.meta.title : '')
+  });
 })
 
 export default router
