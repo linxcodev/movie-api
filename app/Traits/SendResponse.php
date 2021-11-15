@@ -1,7 +1,7 @@
 <?php
-namespace App\Actions;
+namespace App\Traits;
 
-class SendResponse
+trait SendResponse
 {
     /**
      * 403 Forbidden
