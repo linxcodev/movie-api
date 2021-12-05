@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Hash;
 class AuthController extends Controller
 {
     /**
-     * Show resource.
+     * Login user.
      *
      * @return App\Traits\SendResponse
      */
