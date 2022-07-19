@@ -2,12 +2,12 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import store from '../store'
 
-import home from './home'
+import movie from './movie'
 
 Vue.use(VueRouter)
 
 const routes = [
-  ...home
+  ...movie
 ]
 
 const router = new VueRouter({

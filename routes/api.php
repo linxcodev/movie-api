@@ -13,5 +13,5 @@
 |
 */
 $router->group(['prefix' => 'api', 'namespace' => 'Api'], function () use ($router) {
-    $router->get('sampel',  'ExampleController@sampel');
+    $router->get('kategori',  'KategoriController@index');
 });

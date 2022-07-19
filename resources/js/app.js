@@ -50,6 +50,5 @@ new Vue({
     methods: {
     },
     created() {
-        this.$bvToast.toast("sukses jalan", successToas())
     }
 }).$mount('#app')

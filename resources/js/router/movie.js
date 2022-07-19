@@ -1,5 +1,5 @@
 import Home from  '../views/Home.vue'
-import About from '../views/About.vue'
+import kategori from '../views/Kategori.vue'
 
 export default [
     {
@@ -9,9 +9,9 @@ export default [
         // meta: { requiresAuth: true }
     },
     {
-        path: '/about',
-        name: 'about',
-        component: About,
+        path: '/kategori',
+        name: 'kategori',
+        component: kategori,
         // meta: { requiresAuth: true }
-    }
+    },
 ]

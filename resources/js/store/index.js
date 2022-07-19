@@ -3,11 +3,11 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-// import sample
+import kategori from './kategori'
 
 export default new Vuex.Store({
   modules: {
-    // module
+    kategori
   },
   state: {
     errors: [],
