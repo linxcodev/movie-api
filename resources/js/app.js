@@ -39,8 +39,6 @@ if (process.env.VUE_APP_ENV === 'production') {
     Vue.config.silent = true;
 }
 
-import { successToas } from './entities/notif'
-
 new Vue({
     router,
     store,
