@@ -15,4 +15,6 @@
 $router->group(['prefix' => 'api', 'namespace' => 'Api'], function () use ($router) {
     $router->get('kategori',  'KategoriController@index');
     $router->post('kategori',  'KategoriController@store');
+
+    $router->get('{uri}', 'MovieController@index');
 });
